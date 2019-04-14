@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LikedRecyclerview"
+    android:background="@color/colorBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+
+        android:id="@+id/imgItem"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgItem"
+        android:layout_below="@+id/tvItemPrice"
+        android:src="@drawable/ic_message"
+        android:id="@+id/imgDeleteItem"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/colorBlack"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imgItem"
+        android:id="@+id/tvItemDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/colorBlack"
+        android:textSize="17dp"
+        android:layout_below="@+id/tvItemDescription"
+        android:layout_toRightOf="@+id/imgItem"
+        android:id="@+id/tvItemPrice"/>
+
+
+</RelativeLayout>

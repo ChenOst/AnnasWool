@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/colorBackround">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:id="@+id/image"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_description"
+        android:layout_margin="10dp"
+        android:text="product description"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_margin="10dp"
+        android:text="price"
+        android:textSize="20dp"
+        android:textColor="#000"/>
+
+    <com.like.LikeButton
+        app:icon_type="heart"
+        app:icon_size="17dp"
+        android:id="@+id/heart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/LikedRecyclerview"
+    android:background="@color/colorGray">
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemDescription"
+        android:text="Description"
+        android:textSize="22dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imgItem"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvItemPrice"
+        android:text="price"
+        android:textSize="18dp"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/imgItem"
+        android:layout_below="@+id/tvItemDescription"/>
+
+    <ImageView
+        android:id="@+id/imgDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        android:layout_below="@+id/tvItemPrice"
+        android:layout_toRightOf="@+id/imgItem"/>
+</RelativeLayout>

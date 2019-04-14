@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "731764465518",
+    "firebase_url": "https://anna-s-wool.firebaseio.com",
+    "project_id": "anna-s-wool",
+    "storage_bucket": "anna-s-wool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731764465518:android:ba05bccb4c04d65f",
+        "android_client_info": {
+          "package_name": "com.example.annaswool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731764465518-p31bplaoi084g24nv236kjc5koqast7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvpXGRC46H4UbEcmxcLyPNnd-YZaQ9ios"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

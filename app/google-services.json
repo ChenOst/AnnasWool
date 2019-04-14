@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "134919962090",
+    "firebase_url": "https://annaswool-6d049.firebaseio.com",
+    "project_id": "annaswool-6d049",
+    "storage_bucket": "annaswool-6d049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134919962090:android:ba05bccb4c04d65f",
+        "android_client_info": {
+          "package_name": "com.example.annaswool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134919962090-97r5s0med39rs4louvi5t8bucqoie736.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.annaswool",
+            "certificate_hash": "a4cff2c6a907f34be710a1e11ed611e351db9f28"
+          }
+        },
+        {
+          "client_id": "134919962090-ldpq1cekpbb8ohhjqr4p2ertoe1dvng4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTwrCwlJVKw2os473-d4vwFFYAS2VXAi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134919962090-ldpq1cekpbb8ohhjqr4p2ertoe1dvng4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

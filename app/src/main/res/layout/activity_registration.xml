@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/txtHelloTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="40dp"
+        android:text="Not a membet yet? SignUp right below"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHelloTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="e-Mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="25dp"
+        android:text="singup" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Already signed in? Login"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/colorBlack"
+        android:layout_below="@+id/txtLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</RelativeLayout>
