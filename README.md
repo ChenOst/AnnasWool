@@ -12,4 +12,4 @@ In addition to clicking on a category, you can also click on the Toolbar which c
 
 The Tooblar also conatains option to enter the personal area of the site users, by clicking on the user image on top you'll be taken to the next page depending on your status on the site.
 
-# User Conection
+# User Connection
