@@ -34,7 +34,7 @@ If you already connect to your user the page that will apear will be the user pa
 # Contacat Us
 In this category you can send a message to the business owner by e-mail. This category designed in a user-friendly way. You just need to enter your subject and the content itself, the app should be synced to your email. The app will give you the option to sand the email with the help of Gmail.
 
-<
+<img src="images/contectus.png" width=200>
 
 # Store Location
 In this category a Google map showing the address of the business is displayed, in addition to the full address of the business.
