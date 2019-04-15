@@ -40,6 +40,6 @@ In this category you can send a message to the business owner by email. This cat
 # Store Location
 In this category a Google map showing the address of the business is displayed, in addition to the full address of the business.
 
-<img src="images/location.png" width=200>
+<img src="images/location1.png" width=200>
 
 
