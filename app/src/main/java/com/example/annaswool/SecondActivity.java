@@ -11,6 +11,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseUser;
+
 import java.util.ArrayList;
 
 public class SecondActivity extends AppCompatActivity {
@@ -22,6 +25,7 @@ public class SecondActivity extends AppCompatActivity {
     private ArrayList<String> category = new ArrayList<>();
     private ArrayList<String> images = new ArrayList<>();
     private ArrayList<String> prices = new ArrayList<>();
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,7 +148,7 @@ public class SecondActivity extends AppCompatActivity {
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        switch (item.getItemId()){
             case R.id.subitem1:
                 Toast.makeText(this, "Main Menu", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
@@ -152,12 +156,29 @@ public class SecondActivity extends AppCompatActivity {
                 return true;
             case R.id.subitem2:
                 Toast.makeText(this, "Customer Service", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, ContactUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.subitem3:
                 Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.subitem4:
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.item_account:
                 Toast.makeText(this, "account", Toast.LENGTH_SHORT).show();
+                if (firebaseUser==null) {
+                    Intent intent1 = new Intent(this, LoginActivity.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent1 = new Intent(this, ProfileActivity.class);
+                    startActivity(intent1);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

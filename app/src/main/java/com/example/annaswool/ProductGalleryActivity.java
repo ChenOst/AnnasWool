@@ -109,7 +109,7 @@ public class ProductGalleryActivity extends AppCompatActivity implements OnLikeL
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        switch (item.getItemId()){
             case R.id.subitem1:
                 Toast.makeText(this, "Main Menu", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
@@ -117,12 +117,29 @@ public class ProductGalleryActivity extends AppCompatActivity implements OnLikeL
                 return true;
             case R.id.subitem2:
                 Toast.makeText(this, "Customer Service", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, ContactUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.subitem3:
                 Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.subitem4:
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.item_account:
                 Toast.makeText(this, "account", Toast.LENGTH_SHORT).show();
+                if (firebaseUser==null) {
+                    Intent intent1 = new Intent(this, LoginActivity.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent1 = new Intent(this, ProfileActivity.class);
+                    startActivity(intent1);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

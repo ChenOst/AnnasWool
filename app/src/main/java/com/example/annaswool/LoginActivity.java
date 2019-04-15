@@ -5,6 +5,9 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +18,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -25,6 +29,8 @@ public class LoginActivity extends AppCompatActivity {
     TextView register, forgotPassword;
     FirebaseAuth firebaseAuth;
     ProgressBar progressBar;
+    FirebaseUser firebaseUser;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,5 +119,50 @@ public class LoginActivity extends AppCompatActivity {
             result = true;
         }
         return result;
+    }
+    //ToolBar Functions
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.subitem1:
+                Toast.makeText(this, "Main Menu", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, MainActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.subitem2:
+                Toast.makeText(this, "Customer Service", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, ContactUsActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.subitem3:
+                Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.subitem4:
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutUsActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.item_account:
+                Toast.makeText(this, "account", Toast.LENGTH_SHORT).show();
+                if (firebaseUser==null) {
+                    Intent intent1 = new Intent(this, LoginActivity.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent1 = new Intent(this, ProfileActivity.class);
+                    startActivity(intent1);
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -67,9 +67,18 @@ public class ProfileActivity extends AppCompatActivity {
                 return true;
             case R.id.subitem2:
                 Toast.makeText(this, "Customer Service", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, ContactUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.subitem3:
                 Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.subitem4:
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.item_account:
                 Toast.makeText(this, "account", Toast.LENGTH_SHORT).show();

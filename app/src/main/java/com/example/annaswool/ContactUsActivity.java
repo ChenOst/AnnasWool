@@ -82,6 +82,8 @@ public class ContactUsActivity extends AppCompatActivity {
                 return true;
             case R.id.subitem3:
                 Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
                 return true;
             case R.id.subitem4:
                 Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();

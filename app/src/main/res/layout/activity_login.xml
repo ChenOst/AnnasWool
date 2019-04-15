@@ -20,14 +20,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="e-Mail"
+        android:hint="Email"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="password"
+        android:hint="Password"
         android:ems="10"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"

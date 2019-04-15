@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class RegistrationActivity extends AppCompatActivity {
     Toolbar toolbar;
     TextView login;
     ProgressBar progressBar;
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -95,10 +97,9 @@ public class RegistrationActivity extends AppCompatActivity {
         inflater.inflate(R.menu.toolbar_menu, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        switch (item.getItemId()){
             case R.id.subitem1:
                 Toast.makeText(this, "Main Menu", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
@@ -106,14 +107,29 @@ public class RegistrationActivity extends AppCompatActivity {
                 return true;
             case R.id.subitem2:
                 Toast.makeText(this, "Customer Service", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, ContactUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.subitem3:
                 Toast.makeText(this, "Store Location", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, LocationActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.subitem4:
+                Toast.makeText(this, "About us", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutUsActivity.class);
+                this.startActivity(intent);
                 return true;
             case R.id.item_account:
                 Toast.makeText(this, "account", Toast.LENGTH_SHORT).show();
-                Intent intent1 = new Intent(this, RegistrationActivity.class);
-                this.startActivity(intent1);
+                if (firebaseUser==null) {
+                    Intent intent1 = new Intent(this, LoginActivity.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Intent intent1 = new Intent(this, ProfileActivity.class);
+                    startActivity(intent1);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="40dp"
-        android:text="Not a membet yet? SignUp right below"
+        android:text="Not a membet yet? Signup below"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
         android:textSize="15dp"
@@ -31,14 +31,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="e-Mail"
+        android:hint="Email"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="password"
+        android:hint="Password"
         android:ems="10"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/etEmail"
