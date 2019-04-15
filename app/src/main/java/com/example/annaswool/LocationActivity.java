@@ -40,7 +40,7 @@ public class LocationActivity extends FragmentActivity implements OnMapReadyCall
         mapFragment.getMapAsync(this);
 
         location = findViewById(R.id.tvLocation);
-        location.setText("Through the carob 52, Shilat");
+        location.setText("Derech Haharuv 52, Shilat");
     }
 
     @Override
