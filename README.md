@@ -22,7 +22,7 @@ In addition to clicking on a category, you can also click on the Toolbar which c
 The Tooblar also contains an option to enter the personal user area, by clicking on the user image on top you'll be taken to the next page depending on your user status on the site.
 
 # User Connection
-As indicated above the page which will appear depending on your status on the site, if youre not connected to your user the Login page will appear, enter your password and e-mail and connect to your user. In case you forgot your password you can always click on the "Forgot Password" and an email will be sent to you. If youre a new member at the shop youre welcome to click on the "Not a member?Register" text in order to join our shop community, by clicking on this text you'll be taken to the Register page. 
+As indicated above the page which will appear depending on your status on the site, if youre not connected to your user the Login page will appear, enter your password and e-mail and connect to your user. In case you forgot your password you can always click on "Forgot Password" and an email will be sent to you. If youre a new member at the shop youre welcome to click on the "Not a member?Register" text in order to join our shop community, by clicking on this text you'll be taken to the Register page. 
 
 <img src="images/login1.png" width=200>
 
